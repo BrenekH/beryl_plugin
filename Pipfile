@@ -10,3 +10,4 @@ twine = "*"
 pytest = "*"
 
 [packages]
+beryl-plugin = {path = "."}

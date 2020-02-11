@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "4ffaba7825db69410b8512f1983ac1a2fe97fd227f953034faa89a5c06fb5485"
+            "sha256": "20805972a92cf175e4a56351f989e8563f9d903e4a16ce38d8db2d7b47067ddb"
         },
         "pipfile-spec": 6,
         "requires": {},
@@ -13,7 +13,11 @@
             }
         ]
     },
-    "default": {},
+    "default": {
+        "beryl-plugin": {
+            "path": "."
+        }
+    },
     "develop": {
         "atomicwrites": {
             "hashes": [
