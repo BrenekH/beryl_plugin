@@ -4,7 +4,7 @@ with open("README.md") as fh:
 	long_description = fh.read()
 
 setup(name='beryl_plugin',
-	version='0.0.1-alpha.2',
+	version='0.0.1-alpha.3',
 	description='A helper library for creating plugins for the Beryl Timing System.',
 	long_description=long_description,
 	long_description_content_type="text/markdown",
@@ -20,3 +20,7 @@ setup(name='beryl_plugin',
 		"Operating System :: OS Independent",
 	],
 	python_requires=">=3.6")
+
+# Commands to deploy
+# Build step: python setup.py sdist bdist_wheel
+# Release step: python -m twine upload dist/*

@@ -78,12 +78,18 @@ class SaveCrossPluginDataPlugin(PluginBase):
 		self.requirements = []
 		self.save_cross_plugin_data("my_key", "my_value")
 
+	def register_listeners(self):
+		return None
+
 class GetCrossPluginDataPlugin(PluginBase):
 	def __init__(self, parent_class):
 		PluginBase.__init__(self, parent_class, "Get Cross Plugin Data", "zpaw.test_cpd.get", "zpaw.test_cpd")
 		self.parent_class = parent_class
 		self.requirements = []
 		self.get_cross_plugin_data("my_key")
+
+	def register_listeners(self):
+		return None
 
 mockSuperClass = MockPluginSuperClass()
 
