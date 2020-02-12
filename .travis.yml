@@ -19,7 +19,7 @@ script:
 
 deploy:
   - provider: pypi
-    user: __token__
+    username: __token__
     password:
       secure: Eumuz2apsk68x/IF0eqApZ0yuSDsbrjl2fjEPQBxgHc8Uu9hgyzE+B7NEdp0T+cPKveI1MXv6IS8DQwigl26LmtkMakmKM4m2mA+Qau37qoHzgQXIMfSVR8KPob5MDu3noIFtI5CyW9HcJ3JNG7yaihczD99gxSInurCfo5UiwqUoT1pLKxDQc5fniCBRmc7XT0ZSSoD7/wDB5D0yXZPtl9PEvgOwKU7+Yl39gly8bDvr5kZNrZmad1U/jTDCJ2NypWdUMUAknynWThVeGcdzlJTVpMFCfNFaWbSqkeTpsGVYmd/VdnM7SHX/lQFuxj7yDvuhz+DxZ6ufZ2NCZzQJnjhfAP/OKKdq4e7jIJ8xTQqfzlIKRphfLush7qS83WITW6g4sG2v9S7Yd0JMRPBpaIvHvtD9hbr4+2LGnrshx/TfdecxcDSRSAI2fF5CJfEWO+yr7rWHGu6/69ucCotejG7o0vBIeE21gKOOWq9ePfN3YClc2ZEelLoEfhoJf2vmrVN+6FsrvLAc1by5AsC8nQdlXHmsp3ipPtgNOQwxV7qqamvJNn1IONOcBxXvE7A8c5wcDPALXsPI2XzTmqKkNUfb4LqxEbpUMhx0/ygBZaJw2IvzFMvJ7Vm516ItNgJCnhE15hb0NJdY4gQX5rpKMSur9WBRlKlxfYl/dzuHKw=
     edge: true
@@ -28,4 +28,3 @@ deploy:
       all_branches: true
     distributions: "sdist bdist_wheel"
     skip_existing: true
-    skip_cleanup: true
