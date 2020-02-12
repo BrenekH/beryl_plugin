@@ -1,5 +1,7 @@
 import abc
 
+__version__ = "0.0.1-alpha.4"
+
 class PluginBase(abc.ABC):
 	def __init__(self, spawning_class, name, uuid, family_id):
 		self._super_class = spawning_class
