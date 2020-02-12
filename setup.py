@@ -22,5 +22,6 @@ setup(name='beryl_plugin',
 	python_requires=">=3.6")
 
 # Commands to deploy
+# Clean step: (linux) rm -rf dist;  (Windows CMD) rmdir /s /q dist;  (Windows Powershell)  rm dist -r -force
 # Build step: python setup.py sdist bdist_wheel
 # Release step: python -m twine upload dist/*
