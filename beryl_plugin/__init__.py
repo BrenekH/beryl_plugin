@@ -7,10 +7,16 @@ class PluginBase(abc.ABC):
 		self._child_uuid = uuid
 		self._child_family = family_id
 
+	# No need to override methods
 	def info(self):
 		return {"name": self._child_name, "uuid": self._child_uuid, "family_id": self._child_family}
 
+	# Required to override
+	@abc.abstractmethod
+	def register_listeners(self):
+		pass
 
+	# API Methods
 	# Listeners
 	def register_key_listener(self, key, listener):
 		return self._super_class.register_key_listener(key, listener)

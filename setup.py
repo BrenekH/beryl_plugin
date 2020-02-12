@@ -4,7 +4,7 @@ with open("README.md") as fh:
 	long_description = fh.read()
 
 setup(name='beryl_plugin',
-	version='0.0.1-alpha.1',
+	version='0.0.1-alpha.2',
 	description='A helper library for creating plugins for the Beryl Timing System.',
 	long_description=long_description,
 	long_description_content_type="text/markdown",
