@@ -41,4 +41,9 @@ class PluginBase(abc.ABC):
 		return self._super_class.get_current_config(self)
 
 	def get_current_family_config(self):
-		return self._super_class.get_current_config(self)
+		return self._super_class.get_current_family_config(self)
+
+	
+	# Display related methods
+	def get_plugin_display(self):
+		return self._super_class.get_plugin_display(self)
