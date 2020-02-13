@@ -42,6 +42,9 @@ class KeyListenerPlugin(PluginBase):
 	def register_listeners(self):
 		self.register_key_listener(17, self.listener)
 
+	def stop(self):
+		return None
+
 	def listener(self):
 		self.test_mutable += 1
 
@@ -54,6 +57,9 @@ class PeriodListenerPlugin(PluginBase):
 
 	def register_listeners(self):
 		self.register_period_change_listener(self.listener)
+
+	def stop(self):
+		return None
 
 	def listener(self):
 		self.test_mutable += 1
@@ -68,6 +74,9 @@ class LoopListenerPlugin(PluginBase):
 	def register_listeners(self):
 		self.register_on_loop_listener(self.listener)
 
+	def stop(self):
+		return None
+
 	def listener(self):
 		self.test_mutable += 1
 
@@ -81,6 +90,9 @@ class SaveCrossPluginDataPlugin(PluginBase):
 	def register_listeners(self):
 		return None
 
+	def stop(self):
+		return None
+
 class GetCrossPluginDataPlugin(PluginBase):
 	def __init__(self, parent_class):
 		PluginBase.__init__(self, parent_class, "Get Cross Plugin Data", "zpaw.test_cpd.get", "zpaw.test_cpd")
@@ -89,6 +101,9 @@ class GetCrossPluginDataPlugin(PluginBase):
 		self.get_cross_plugin_data("my_key")
 
 	def register_listeners(self):
+		return None
+
+	def stop(self):
 		return None
 
 mockSuperClass = MockPluginSuperClass()
