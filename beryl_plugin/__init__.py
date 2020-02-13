@@ -18,6 +18,12 @@ class PluginBase(abc.ABC):
 	def register_listeners(self):
 		pass
 
+	@abc.abstractmethod
+	def stop(self):
+		"""Called when the plugin is no longer needed. Should properly close any open streams.
+		"""
+		pass
+
 	# API Methods
 	# Listeners
 	def register_key_listener(self, key, listener):
