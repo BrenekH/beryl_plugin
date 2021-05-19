@@ -1,6 +1,6 @@
 import abc
 
-__version__ = "0.0.1-alpha.8"
+__version__ = "0.0.1"
 
 class PluginBase(abc.ABC):
 	def __init__(self, spawning_class, display_name, ID):
